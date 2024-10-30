@@ -10,7 +10,7 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    /*public function up(): void
     {
         Schema::table('users', function (Blueprint $table) {
             $table->text('two_factor_secret')
@@ -27,7 +27,7 @@ return new class extends Migration
                     ->nullable();
             }
         });
-    }
+    }*/
 
     /**
      * Reverse the migrations.

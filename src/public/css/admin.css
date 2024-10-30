@@ -1,0 +1,136 @@
+.admin__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.admin__header {
+    margin-bottom: 20px;
+    color:#726659;
+}
+
+.search-form {
+    margin-bottom: 20px;
+}
+
+.search-form__item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.search-form__input {
+    padding: 5px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.search-form__item-select {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.search-form__item-date {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.search-form__button-submit {
+    padding: 5px 10px;
+    background: #726659;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-form__button-reset {
+    padding: 5px 10px;
+    background: #c5bdb6;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-form__button-export {
+    padding: 5px 10px;
+    background: #ebe7e4;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.admin-table {
+    margin: 20px 0;
+}
+
+.admin-table__inner {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table__header {
+    padding: 15px;
+    background: #726659;
+    color: #fff;
+    text-align: left;
+}
+
+.admin-table__row:nth-child(even) {
+    background: #f5f5f5;
+}
+
+.admin-table__item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-table__button {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #ebe7e4;
+    border-radius: 3px;
+    color: #000;
+    text-decoration: none;
+}
+
+.admin-table__button-delete {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.admin-table__button-delete:hover {
+    background-color: #c0392b;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 5px 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #333;
+    text-decoration: none;
+}
+
+.pagination .active {
+    background: #726659;
+    color: #fff;
+}

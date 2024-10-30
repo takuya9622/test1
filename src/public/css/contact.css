@@ -1,0 +1,146 @@
+.contact-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #726659;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: left;
+}
+
+.form__group {
+    margin-bottom: 30px;
+}
+
+.form__group-title {
+    margin-bottom: 5px;
+}
+
+.form__label--item {
+    color: #726659;
+}
+
+.form__label--required {
+    color: #ff0000;
+    margin-left: 5px;
+}
+
+.form__group-content {
+    margin-top: 5px;
+}
+
+.form__input--text input,
+.form__input--text-field input,
+.form__input--tel input {
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #f4f4f4;
+}
+
+.form__input--text-field {
+    display: flex;
+    gap: 20px;
+}
+
+.form__input--text-field input {
+    width: calc(50% - 10px);
+}
+
+.form__input--radio {
+    display: flex;
+    gap: 40px;
+    margin-top: 5px;
+}
+
+.form__input--radio input[type="radio"] {
+    margin-right: 5px;
+}
+
+.form__input--tel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form__input--tel input {
+    width: calc(33.33% - 10px);
+}
+
+.form__input--tel span {
+    color: #726659;
+}
+
+.form__input--select select {
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #f4f4f4;
+}
+
+.form__input--textarea textarea {
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #f4f4f4;
+    resize: vertical;
+}
+
+.form__error {
+    margin-top: 5px;
+    color: #ff0000;
+    font-size: 14px;
+}
+
+.form__button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form__button-submit {
+    padding: 10px 30px;
+    background: #726659;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form__button-submit:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+
+    .form__input--text-field {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form__input--text-field input {
+        width: 100%;
+    }
+
+    .form__input--radio {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
