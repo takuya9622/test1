@@ -4,22 +4,20 @@
 
 ## 使用技術一覧
 
-<!-- シールド一覧 -->
-<!-- 該当するプロジェクトの中から任意のものを選ぶ-->
 <p style="display: inline">
 
   <!-- バックエンドのフレームワーク一覧 -->
-  <img src="https://img.shields.io/badge/-Django-092E20.svg?logo=django&style=for-the-badge">
+  <img src="https://img.shields.io/badge/-Laravel-171923.svg?logo=laravel&style=for-the-badge">
   <!-- バックエンドの言語一覧 -->
-  <img src="https://img.shields.io/badge/-Python-F2C63C.svg?logo=python&style=for-the-badge">
-  <!-- ミドルウェア一覧 -->
+  <img src="https://img.shields.io/badge/-Php-777BB4.svg?logo=php&logoColor=FFFFFF&style=for-the-badge">
+  <!-- WEBサーバー -->
   <img src="https://img.shields.io/badge/-Nginx-269539.svg?logo=nginx&style=for-the-badge">
+  <!-- データベース関連 -->
   <img src="https://img.shields.io/badge/-MySQL-4479A1.svg?logo=mysql&style=for-the-badge&logoColor=white">
-  <img src="https://img.shields.io/badge/-Gunicorn-199848.svg?logo=gunicorn&style=for-the-badge&logoColor=white">
+  <img src="https://img.shields.io/badge/-phpmyadmin-6C78AF.svg?logo=phpmyadmin&style=for-the-badge&logoColor=white">
   <!-- インフラ一覧 -->
   <img src="https://img.shields.io/badge/-Docker-1488C6.svg?logo=docker&style=for-the-badge">
-  <img src="https://img.shields.io/badge/-githubactions-FFFFFF.svg?logo=github-actions&style=for-the-badge">
-  <img src="https://img.shields.io/badge/-terraform-20232A?style=for-the-badge&logo=terraform&logoColor=844EBA">
+  <img src="https://img.shields.io/badge/-github-010409.svg?logo=github&style=for-the-badge">
 </p>
 
 ## 目次
@@ -41,19 +39,7 @@
     <a href="Dockerfileの詳細リンク"><strong>Dockerfileの詳細 »</strong></a>
 </div>
 <br />
-<!-- プロジェクト名を記載 -->
 
-## プロジェクト名
-
-React、DRF、Terraform のテンプレートリポジトリ
-
-<!-- プロジェクトについて -->
-
-## プロジェクトについて
-
-React、DRF、Terraform を勉強する際に使用できるテンプレート
-
-<!-- プロジェクトの概要を記載 -->
 
   <p align="left">
     <br />
@@ -68,16 +54,15 @@ React、DRF、Terraform を勉強する際に使用できるテンプレート
 
 <!-- 言語、フレームワーク、ミドルウェア、インフラの一覧とバージョンを記載 -->
 
-| 言語・フレームワーク  | バージョン |
+| 技術                  | バージョン  |
 | --------------------- | ---------- |
-| Python                | 3.11.4     |
-| Django                | 4.2.1      |
-| Django Rest Framework | 3.14.0     |
-| MySQL                 | 8.0        |
-| Node.js               | 16.17.0    |
-| React                 | 18.2.0     |
-| Next.js               | 13.4.6     |
-| Terraform             | 1.3.6      |
+| php                   | 7.4.9      |
+| Laravel               | 8.83.27    |
+| MySQL                 | 8.0.26     |
+| phpMyAdmin            | 5.2.1      |
+| nginx                 | 1.21.1     |
+
+
 
 その他のパッケージのバージョンは pyproject.toml と package.json を参照してください
 
@@ -89,7 +74,7 @@ React、DRF、Terraform を勉強する際に使用できるテンプレート
 
 ❯ tree -a -I "node_modules|.next|.git|.pytest_cache|static" -L 2
 .
-├── .devcontainer
+├── .src
 │   └── devcontainer.json
 ├── .env
 ├── .github
@@ -146,15 +131,15 @@ React、DRF、Terraform を勉強する際に使用できるテンプレート
 
 .env ファイルを以下の環境変数例と[環境変数の一覧](#環境変数の一覧)を元に作成
 
-.env
-MYSQL_ROOT_PASSWORD=root
-MYSQL_DATABASE=django-db
-MYSQL_USER=django
-MYSQL_PASSWORD=django
-MYSQL_HOST=db
-MYSQL_PORT=3306
-SECRET_KEY=django
-DJANGO_SETTINGS_MODULE=project.settings.local
+.env <br />
+MYSQL_ROOT_PASSWORD=root <br />
+MYSQL_DATABASE=django-db <br />
+MYSQL_USER=django <br />
+MYSQL_PASSWORD=django <br />
+MYSQL_HOST=db <br />
+MYSQL_PORT=3306 <br />
+SECRET_KEY=django <br />
+DJANGO_SETTINGS_MODULE=project.settings.local <br />
 
 
 .env ファイルを作成後、以下のコマンドで開発環境を構築
