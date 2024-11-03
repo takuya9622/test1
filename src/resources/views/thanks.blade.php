@@ -56,7 +56,7 @@
     <div class="background-text">Thank you</div>
     <div class="content">
         <p class="message">お問い合わせありがとうございました</p>
-        <a href="#" class="home-button">HOME</a>
+        <a href="/" class="home-button">HOME</a>
     </div>
 </body>
 </html>

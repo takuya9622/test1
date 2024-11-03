@@ -1,0 +1,52 @@
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.confirm-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.confirm-table th,
+.confirm-table td {
+    padding: 10px;
+    border: 1px solid #d0b8a4;
+}
+
+.confirm-table th {
+    background-color: #d0b8a4;
+    color: white;
+    text-align: left;
+    width: 30%;
+}
+
+.confirm-table td {
+    background-color: #f8f6f4;
+    text-align: left;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.send-button,
+.edit-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #d0b8a4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.send-button:hover,
+.edit-button:hover {
+    background-color: #b09b84;
+}

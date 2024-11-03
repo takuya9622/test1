@@ -14,33 +14,29 @@
 <body>
     <header class="header">
         <div class="header__inner">
-        <div class="header-utilities">
-            <a class="header__logo" href="/">
-            FashionablyLate
-            </a>
-            <nav>
-            <ul class="header-nav">
-                <li class="header-nav__item">
-                    @if (Request::is('register'))
-                        <a class="header-nav__link" href="/login">login</a>
-                    @elseif (Request::is('login'))
-                        <a class="header-nav__link" href="/register">register</a>
-                    @elseif (Request::is('admin') || Request::is('admin/*'))
-                        <form action="/logout" method="POST" style="display: inline;">
-                    @csrf
-                        <button type="submit" class="header-nav__link" style="background: none; border: none; cursor: pointer;">
-                            logout
-                        </button>
-                        </form>
-                    @else
-
-                    @endif
-                </li>
-            </ul>
-            </nav>
-        </div>
+            <div class="header-utilities">
+                <div class="header-left"></div>
+                <a class="header__logo" href="/">FashionablyLate</a>
+                <nav class="header-right">
+                    <ul class="header-nav">
+                        <li class="header-nav__item">
+                            @if (Request::is('register'))
+                                <a class="header-nav__link" href="/login">login</a>
+                            @elseif (Request::is('login'))
+                                <a class="header-nav__link" href="/register">register</a>
+                            @elseif (Request::is('admin') || Request::is('admin/*'))
+                                <form action="/logout" method="POST" class="header-nav__form">
+                                    @csrf
+                                    <button type="submit" class="header-nav__link">logout</button>
+                                </form>
+                            @endif
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
+
 
     <main>
         @yield('content')

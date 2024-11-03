@@ -7,12 +7,12 @@
 
 .header {
     background: #fff;
+    width: 100%;
 }
 
 .header__inner {
-    margin: 0 auto;
     padding: 20px 15px;
-    max-width: 1230px;
+    width: 100%;
 }
 
 .header-utilities {
@@ -21,14 +21,34 @@
     justify-content: space-between;
 }
 
+.header-left {
+    flex: 1;
+    /* 左端の空白スペース */
+}
+
 .header__logo {
+    margin: 0 auto;
     color: #726659;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
 }
 
+.header-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    /* 右端にボタンを配置 */
+}
+
 .header-nav__link {
     color: #726659;
     text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header-nav__form {
+    display: inline;
 }

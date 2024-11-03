@@ -1,43 +1,41 @@
 @extends('layouts.app')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/register.css') }}">
+<link rel="stylesheet" href="{{ asset('css/login.css') }}">
 @endsection
 
 @section('content')
-<div class="register-container">
-    <h2>ユーザー登録</h2>
+<div class="login-container">
+    <h2>register</h2>
 
-    <form method="POST" action="{{ route('register') }}">
+    <form method="POST" action="{{ route('register') }}" novalidate>
         @csrf
 
-        <div>
-            <label for="name">名前</label>
-            <input id="name" type="text" name="name" value="{{ old('name') }}" required autofocus>
+        <div class="form-group">
+            <label for="name">お名前</label>
+            <input id="name" type="text" name="name" placeholder="例: 山田　太郎" required autofocus>
             @error('name')
-                <div class="error">{{ $message }}</div>
+            <div class="error">{{ $message }}</div>
             @enderror
         </div>
 
-        <div>
+        <div class="form-group">
             <label for="email">メールアドレス</label>
-            <input id="email" type="email" name="email" value="{{ old('email') }}" required>
+            <input id="email" type="email" name="email" placeholder="例: test@example.com" required>
             @error('email')
-                <div class="error">{{ $message }}</div>
+            <div class="error">{{ $message }}</div>
             @enderror
         </div>
 
-        <div>
+        <div class="form-group">
             <label for="password">パスワード</label>
-            <input id="password" type="password" name="password" required>
+            <input id="password" type="password" name="password" placeholder="例: coachtech1106" required>
             @error('password')
-                <div class="error">{{ $message }}</div>
+            <div class="error">{{ $message }}</div>
             @enderror
         </div>
 
-        <div>
-            <button type="submit">登録</button>
-        </div>
+        <button type="submit" class="login-button">登録</button>
     </form>
 </div>
 @endsection

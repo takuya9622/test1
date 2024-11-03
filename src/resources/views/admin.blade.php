@@ -58,7 +58,7 @@
     <div class="search-form">
         <form class="search-form__item" action="/admin/search" method="get">
             <input class="search-form__input" type="text" name="keyword" value="{{ request('keyword') }}" placeholder="名前やメールアドレスを入力してください">
-            
+
             <select class="search-form__item-select" name="gender">
                 <option value="">性別</option>
                 <option value="" {{ request('gender') === '' ? 'selected' : '' }}>全て</option>
@@ -66,20 +66,20 @@
                 <option value="2" {{ request('gender') === '2' ? 'selected' : '' }}>女性</option>
                 <option value="3" {{ request('gender') === '3' ? 'selected' : '' }}>その他</option>
             </select>
-            
+
             <select class="search-form__item-select" name="category_id">
                 <option value="">お問い合わせの種類</option>
                 @foreach ($categories as $category)
                 <option value="{{ $category->id }}" {{ request('category_id') == $category->id ? 'selected' : '' }}>{{ $category->content }}</option>
                 @endforeach
             </select>
-            
+
             <input class="search-form__item-date" type="date" name="date" value="{{ request('date') }}">
-            
+
             <button class="search-form__button-submit" type="submit">検索</button>
             <button class="search-form__button-reset" type="button" onclick="location.href='/admin'">リセット</button>
         </form>
-        
+
         <div class="search-form__button">
             <button class="search-form__button-export" onclick="location.href='/admin/export'">エクスポート</button>
         </div>
