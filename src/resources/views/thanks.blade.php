@@ -13,7 +13,6 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
             background-color: #ffffff;
         }
 
