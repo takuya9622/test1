@@ -85,12 +85,11 @@ DB_PASSWORD=laravel_pass <br />
 docker-compose up -d --build
 
 ### 動作確認
-[link](URL){:target="[http://localhost:81](http://localhost:81)"}
-にアクセスできるか確認
+
+[http://localhost:81](http://localhost:81){:target="_blank"}にアクセスできるか確認
 アクセスできたらnginxはOK
 <br />
-[link](URL){:target="[http://localhost:8082](http://localhost:8082)"}
-にアクセスできるか確認
+[http://localhost:8082](http://localhost:8082){:target="_blank"}にアクセスできるか確認
 アクセス出来たらMySqlはOK
 
 ### コンテナの停止
