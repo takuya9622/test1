@@ -25,10 +25,7 @@
 1. [環境](#環境)
 2. [開発環境構築](#開発環境構築)
 
-<br />
-<div align="right">
-    <a href="Dockerfileの詳細リンク"><strong>Dockerfileの詳細 »</strong></a>
-</div>
+
 <br />
 
 
@@ -86,10 +83,10 @@ docker-compose up -d --build
 
 ### 動作確認
 
-http://localhost:81にアクセスできるか確認
+http://localhost:81 にアクセスできるか確認
 アクセスできたらnginxはOK
 <br />
-http://localhost:8082にアクセスできるか確認
+http://localhost:8082 にアクセスできるか確認
 アクセス出来たらMySqlはOK
 
 ### コンテナの停止
