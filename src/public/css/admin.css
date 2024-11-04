@@ -149,31 +149,34 @@
     align-items: center;
 }
 
-.search-form__input {
+.search-form .search-form__item .search-form__input {
     flex: 2 1 300px;
     min-width: 300px;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 3px;
     box-sizing: border-box;
+    color: #6b5b54;
 }
 
-.search-form__item-select {
+.search-form .search-form__item .search-form__item-select {
     flex: 1 3 auto;
     min-width: 100px;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 3px;
     box-sizing: border-box;
+    color: #6b5b54;
 }
 
-.search-form__item-date {
+.search-form .search-form__item .search-form__item-date {
     flex: 1 4 auto;
     min-width: 100px;
     padding: 5px;
     border: 1px solid #ddd;
     border-radius: 3px;
     box-sizing: border-box;
+    color: #6b5b54;
 }
 
 .search-form__button-submit,
@@ -215,6 +218,7 @@
 .search-form__button-export {
     padding: 8px 12px;
     background: #ebe7e4;
+    color: #6b5b54;
     border: none;
     border-radius: 5px;
     cursor: pointer;

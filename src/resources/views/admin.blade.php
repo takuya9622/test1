@@ -37,7 +37,13 @@
         </form>
 
         <div class="search-form__button-pagination-container">
-            <button class="search-form__button-export" onclick="location.href='/admin/export'">エクスポート</button>
+            <form action="{{ route('admin.export') }}" method="GET">
+                <input type="hidden" name="keyword" value="{{ request('keyword') }}">
+                <input type="hidden" name="gender" value="{{ request('gender') }}">
+                <input type="hidden" name="category_id" value="{{ request('category_id') }}">
+                <input type="hidden" name="date" value="{{ request('date') }}">
+                <button type="submit" class="search-form__button-export">エクスポート</button>
+            </form>
 
             <div class="pagination">
                 {{ $contacts->appends(request()->query())->links() }}

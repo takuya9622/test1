@@ -35,5 +35,6 @@ Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name
 Route::middleware(['auth'])->group(function () {
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
     Route::get('/admin/search', [AdminController::class, 'search']);
+    Route::get('/admin/export', [AdminController::class, 'exportCsv'])->name('admin.export');
     Route::delete('/admin/{id}', [AdminController::class, 'destroy'])->name('admin.destroy');
 });
