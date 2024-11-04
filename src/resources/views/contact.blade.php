@@ -25,7 +25,7 @@
         <h2>Contact</h2>
     </div>
 
-    <form class="form" action="/confirm" method="post">
+    <form class="form" action="/confirm" method="post" novalidate>
         @csrf
         <div class="form__group">
             <div class="form__group-title">
@@ -59,7 +59,7 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input--radio">
-                    <input type="radio" name="gender" value="男性" id="male"{{ (isset($contact['gender']) && $contact['gender'] == '男性') || old('gender') == '男性' ? 'checked' : '' }}>
+                    <input type="radio" name="gender" value="男性" id="male" checked{{ (isset($contact['gender']) && $contact['gender'] == '男性') || old('gender') == '男性' ? 'checked' : '' }}>
                     <label for="male">男性</label>
 
                     <input type="radio" name="gender" value="女性" id="female"{{ (isset($contact['gender']) && $contact['gender'] == '女性') || old('gender') == '女性' ? 'checked' : '' }}>

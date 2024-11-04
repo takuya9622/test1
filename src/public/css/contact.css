@@ -7,7 +7,7 @@
 .contact-form__heading {
     margin-bottom: 40px;
     text-align: center;
-    color: #726659;
+    color: #6b5b54;
 }
 
 .form {
@@ -25,7 +25,7 @@
 }
 
 .form__label--item {
-    color: #726659;
+    color: #6b5b54;
 }
 
 .form__label--required {
@@ -82,7 +82,7 @@
     /* カスタムラジオボタンのサイズ */
     height: 20px;
     /* カスタムラジオボタンのサイズ */
-    border: 2px solid #726659;
+    border: 2px solid #6b5b54;
     /* 枠線の色 */
     border-radius: 50%;
     /* 円形にする */
@@ -92,9 +92,9 @@
 }
 
 .form__input--radio input[type="radio"]:checked+label::before {
-    background-color: #726659;
+    background-color: #6b5b54;
     /* 選択された時の背景色 */
-    border-color: #726659;
+    border-color: #6b5b54;
     /* 選択された時の枠線の色 */
     content: '\2713';
     /* チェックマークを追加（オプション） */
@@ -123,7 +123,7 @@
 }
 
 .form__input--tel span {
-    color: #726659;
+    color: #6b5b54;
 }
 
 .form__input--select select {
@@ -133,6 +133,7 @@
     border: 1px solid #ddd;
     border-radius: 3px;
     background: #f4f4f4;
+    color: #6b5b54;
 }
 
 .form__input--textarea textarea {
@@ -145,7 +146,7 @@
     resize: vertical;
 }
 
-.form__error {
+.form .form__group-title .form__error {
     margin-top: 5px;
     color: #ff0000;
     font-size: 14px;
@@ -158,12 +159,13 @@
 
 .form__button-submit {
     padding: 10px 30px;
-    background: #726659;
+    background: #6b5b54;
     border: none;
     border-radius: 3px;
     color: #fff;
     cursor: pointer;
     font-size: 16px;
+    transition: opacity 0.3s;
 }
 
 .form__button-submit:hover {

@@ -11,7 +11,7 @@
     width: auto;
     max-width: 700px;
     height: 90%;
-    padding: 20px;
+    padding: 70px 55px;
     background-color: white;
     border: 1px solid #e0dfde;
     border-radius: 8px;
@@ -57,27 +57,38 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    display: inline-block;
+    display: inline-flex;;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
-    line-height: 40px;
-    text-align: center;
     font-size: 2rem;
-    color: #8b7969;
+    color: #6b5b54;
     text-decoration: none;
     background-color: #fff;
-    border: 1px solid #8b7969;
+    border: 1px solid #6b5b54;
     border-radius: 50%;
-    margin-bottom: 10px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    font-size: 0;
+}
+
+.modal a.modal-close::before {
+    content: '×';
+    font-size: 2rem;
+    color: #6b5b54;
+    line-height: 1;
+    transform: translateY(-2px);
 }
 
 .modal a.modal-close:hover {
-    background-color: #8b7969;
-    /* ホバー時の背景色 */
+    background-color: #6b5b54;
     color: #fff;
-    /* ホバー時の文字色 */
+}
+
+.modal a.modal-close:hover::before {
+    color: #fff;
+    /* ホバー時のマークの色 */
 }
 
 .modal form {
@@ -85,12 +96,16 @@
     justify-content: center;
 }
 
+.admin-table__button-container {
+    margin-top:50px;
+}
+
 .admin-table__button-delete {
     padding: 10px 20px;
     background-color: #ba370d;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 2px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -111,7 +126,6 @@
 .admin__header {
     text-align: center;
     margin-bottom: 20px;
-    color: #726659;
 }
 
 .search-form,
@@ -165,7 +179,7 @@
 .search-form__button-submit,
 .search-form__button-reset {
     padding: 5px 15px;
-    background: #726659;
+    background: #6b5b54;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -174,16 +188,21 @@
 }
 
 .search-form__button-submit {
-    background: #726659;
+    background: #6b5b54;
+    transition: opacity 0.3s;
+}
+
+.search-form__button-submit:hover {
+    opacity: 0.8;
 }
 
 .search-form__button-reset {
     background: #c5bdb6;
+    transition: background-color 0.3s;
 }
 
-.search-form__button-submit:hover,
 .search-form__button-reset:hover {
-    background: #5b4d3f;
+    background: #6b5b54;
 }
 
 .search-form__button-pagination-container {
@@ -196,7 +215,6 @@
 .search-form__button-export {
     padding: 8px 12px;
     background: #ebe7e4;
-    color: #8b7969;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -204,7 +222,8 @@
 }
 
 .search-form__button-export:hover {
-    background: #5b4d3f;
+    background: #6b5b54;
+    color: #fff;
 }
 
 .admin-table__inner {
@@ -214,7 +233,7 @@
 
 .admin-table__header {
     padding: 15px;
-    background: #726659;
+    background: #6b5b54;
     color: #fff;
     text-align: left;
 }
@@ -231,11 +250,17 @@
 .admin-table__button {
     display: inline-block;
     padding: 5px 10px;
-    border-radius: 3px;
+    border-radius: 2px;
     text-decoration: none;
     text-align: center;
     background: #ebe7e4;
-    color: #000;
+    color: #6b5b54;
+    transition: background-color 0.3s;
+}
+
+.admin-table__button:hover {
+    background: #6b5b54;
+    color: #fff;
 }
 
 .pagination {
@@ -247,21 +272,28 @@
 .pagination span {
     padding: 5px 10px;
     border-radius: 5px;
-    border: 1px solid #ddd;
-    background: #f7f7f7;
-    color: #333;
+    border: 1px solid #6b5b54;
+    background: #fff;
+    color: #6b5b54;
     text-decoration: none;
     transition: background-color 0.3s;
 }
 
 .pagination a:hover {
-    background: #726659;
+    background: #6b5b54;
     color: #fff;
 }
 
 .pagination .active {
-    background: #726659;
+    background: #6b5b54;
     color: #fff;
-    border-color: #726659;
+    border-color: #6b5b54;
+    cursor: default;
+}
+
+.pagination li.active span {
+    background: #6b5b54;
+    color: #fff;
+    border-color: #6b5b54;
     cursor: default;
 }

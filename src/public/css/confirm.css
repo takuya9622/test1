@@ -14,22 +14,29 @@ h1 {
     border-collapse: collapse;
 }
 
-.confirm-table th,
-.confirm-table td {
-    padding: 10px;
-    border: 1px solid #d0b8a4;
-}
-
 .confirm-table th {
-    background-color: #d0b8a4;
-    color: white;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-left: 1px solid #6b5b54;
+    background-color: #6b5b54;
+    color: #fff;
     text-align: left;
     width: 30%;
 }
 
 .confirm-table td {
-    background-color: #f8f6f4;
+    padding: 20px;
+    border: 1px solid #6b5b54;
+    background-color: #fff;
     text-align: left;
+}
+
+.confirm-table .confirm-table__top {
+    border-top: 1px solid #6b5b54;
+}
+
+.confirm-table .confirm-table__bottom {
+    border-bottom: 1px solid #6b5b54;
 }
 
 .buttons {
@@ -40,13 +47,23 @@ h1 {
 .edit-button {
     padding: 10px 20px;
     margin: 0 10px;
-    background-color: #d0b8a4;
-    color: white;
+    background-color: #6b5b54;
     border: none;
+    border-radius: 2px;
+    transition: opacity 0.3s;
     cursor: pointer;
+    color: #fff;
 }
 
 .send-button:hover,
 .edit-button:hover {
-    background-color: #b09b84;
+    opacity: 0.8;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* ボタン間の間隔を調整 */
+    margin-top: 20px;
 }

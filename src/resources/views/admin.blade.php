@@ -81,11 +81,13 @@
             <tr><th>お問い合わせの種類</th><td>{{ $contact->category->content }}</td></tr>
             <tr><th>お問い合わせ内容</th><td>{{ $contact->detail }}</td></tr>
         </table>
-        <form action="{{ route('admin.destroy', $contact->id) }}" method="POST">
+        <div class="admin-table__button-container">
+            <form action="{{ route('admin.destroy', $contact->id) }}" method="POST">
             @csrf
             @method('DELETE')
-            <button type="submit" class="admin-table__button-delete" onclick="return confirm('本当に削除しますか？');">削除</button>
-        </form>
+                <button type="submit" class="admin-table__button-delete" onclick="return confirm('本当に削除しますか？');">削除</button>
+            </form>
+        </div>
     </div>
     @endforeach
 </div>
