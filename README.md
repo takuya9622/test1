@@ -22,11 +22,8 @@
 
 ## 目次
 
-1. [プロジェクトについて](#プロジェクトについて)
-2. [環境](#環境)
-3. [ディレクトリ構成](#ディレクトリ構成)
-4. [開発環境構築](#開発環境構築)
-5. [トラブルシューティング](#トラブルシューティング)
+1. [環境](#環境)
+2. [開発環境構築](#開発環境構築)
 
 <br />
 <div align="right">
@@ -35,14 +32,7 @@
 <br />
 
 
-  <p align="left">
-    <br />
-    <!-- プロジェクト詳細にBacklogのWikiのリンク -->
-    <a href="Backlogのwikiリンク"><strong>プロジェクト詳細 »</strong></a>
-    <br />
-    <br />
 
-<p align="right">(<a href="#top">トップへ</a>)</p>
 
 ## 環境
 
@@ -60,6 +50,16 @@
 <p align="right">(<a href="#top">トップへ</a>)</p>
 
 ## 開発環境構築
+
+### Dockerビルド
+| コマンド                                       | 実行する処理         |
+| ---------------------------------------------- | -------------------- |
+| git clone https://github.com/takuya9622/test1.git | リポジトリをクローン |
+| docker-compose up -d --build                  | コンテナの起動       |
+
+
+必要に応じてdocker-compose.yml,Dockerfileは編集してください
+
 
 
 ### コンテナの作成と起動
@@ -82,17 +82,17 @@ docker-compose up
 
 http://localhost:81 にアクセスできるか確認
 アクセスできたらnginxはOK
-
+<br />
 http://localhost:8082 にアクセスできるか確認
 アクセス出来たらMySqlはOK
 
 ### コンテナの停止
 
-以下のコマンドでコンテナを停止することができます
+以下のコマンドでコンテナを停止
 
 docker-compose down
 
-composer require laravel/fortify
+
 ### コマンド一覧
 
 | コマンド                                                                               | 実行する処理                           |
@@ -102,6 +102,7 @@ composer require laravel/fortify
 | docker-compose up -d --build                                                           | コンテナの起動                         |
 | docker-compose down                                                                    | コンテナの停止                         |
 | docker-compose exec php bash                                                           | php コンテナに入る                     |
+| php artisan key;generate                                                               | 暗号化キーを生成                     |
 | php artisan make:migration create_contacts_table                                       | マイグレーションファイルを作成         |
 | php artisan make:seeder ContactsSeeder                                                 | シーダーファイルを作成                 |
 | php artisan make:factory ContactFactory                                                | ファクトリーファイルを作成             |
