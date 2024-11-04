@@ -51,11 +51,11 @@
 
 ## 開発環境構築
 
-### Dockerビルド
-| コマンド                                       | 実行する処理         |
-| ---------------------------------------------- | -------------------- |
-| git clone https://github.com/takuya9622/test1.git | リポジトリをクローン |
-| docker-compose up -d --build                  | コンテナの起動       |
+
+
+
+
+
 
 
 必要に応じてdocker-compose.yml,Dockerfileは編集してください
@@ -63,6 +63,12 @@
 
 
 ### コンテナの作成と起動
+
+以下のコマンドでリポジトリをクローン
+
+git clone https://github.com/takuya9622/test1.git
+
+必要に応じてdocker-compose.yml,Dockerfileは編集してください
 
 .env ファイルを以下の環境変数例を元に作成
 
@@ -76,14 +82,15 @@ DB_PASSWORD=laravel_pass <br />
 
 .env ファイルを作成後、以下のコマンドで開発環境を構築
 
-docker-compose up
+docker-compose up -d --build
 
 ### 動作確認
-
-http://localhost:81 にアクセスできるか確認
+[link](URL){:target="[http://localhost:81](http://localhost:81)"}
+にアクセスできるか確認
 アクセスできたらnginxはOK
 <br />
-http://localhost:8082 にアクセスできるか確認
+[link](URL){:target="[http://localhost:8082](http://localhost:8082)"}
+にアクセスできるか確認
 アクセス出来たらMySqlはOK
 
 ### コンテナの停止
