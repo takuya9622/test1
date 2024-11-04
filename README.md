@@ -61,13 +61,13 @@
 
 ### コンテナの作成と起動
 
-以下のコマンドでリポジトリをクローン
+①以下のコマンドでリポジトリをクローン
 
 git clone https://github.com/takuya9622/test1.git
 
-必要に応じてdocker-compose.yml,Dockerfileは編集してください
+※ 必要に応じてdocker-compose.yml,Dockerfileは編集してください
 
-.env ファイルを以下の環境変数例を元に作成
+②.env ファイルを以下の環境変数例を元に作成
 
 .env <br />
 DB_CONNECTION=mysql <br />
@@ -77,7 +77,7 @@ DB_DATABASE=laravel_db <br />
 DB_USERNAME=laravel_user <br />
 DB_PASSWORD=laravel_pass <br />
 
-.env ファイルを作成後、以下のコマンドで開発環境を構築
+③.env ファイルを作成後、以下のコマンドで開発環境を構築
 
 docker-compose up -d --build
 
@@ -96,7 +96,7 @@ http://localhost:8082 にアクセスできるか確認
 docker-compose down
 
 
-### コマンド一覧
+### 主なコマンド一覧
 
 | コマンド                                                                               | 実行する処理                           |
 | -------------------------------------------------------------------------------------- | -------------------------------------- |
