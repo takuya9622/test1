@@ -54,7 +54,7 @@
 
 <!-- 言語、フレームワーク、ミドルウェア、インフラの一覧とバージョンを記載 -->
 
-| 技術                  | バージョン  |
+| 言語・フレームワーク | バージョン  |
 | --------------------- | ---------- |
 | php                   | 7.4.9      |
 | Laravel               | 8.83.27    |
@@ -65,61 +65,6 @@
 
 
 その他のパッケージのバージョンは pyproject.toml と package.json を参照してください
-
-<p align="right">(<a href="#top">トップへ</a>)</p>
-
-## ディレクトリ構成
-
-<!-- Treeコマンドを使ってディレクトリ構成を記載 -->
-
-❯ tree -a -I "node_modules|.next|.git|.pytest_cache|static" -L 2
-.
-├── .src
-│   └── devcontainer.json
-├── .env
-├── .github
-│   ├── action
-│   ├── release-drafter.yml
-│   └── workflows
-├── .gitignore
-├── Makefile
-├── README.md
-├── backend
-│   ├── .vscode
-│   ├── application
-│   ├── docs
-│   ├── manage.py
-│   ├── output
-│   ├── poetry.lock
-│   ├── project
-│   └── pyproject.toml
-├── containers
-│   ├── django
-│   ├── front
-│   ├── mysql
-│   └── nginx
-├── docker-compose.yml
-├── frontend
-│   ├── .gitignore
-│   ├── README.md
-│   ├── __test__
-│   ├── components
-│   ├── features
-│   ├── next-env.d.ts
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── pages
-│   ├── postcss.config.js
-│   ├── public
-│   ├── styles
-│   ├── tailwind.config.js
-│   └── tsconfig.json
-└── infra
-    ├── .gitignore
-    ├── docker-compose.yml
-    ├── main.tf
-    ├── network.tf
-    └── variables.tf
 
 <p align="right">(<a href="#top">トップへ</a>)</p>
 
@@ -148,7 +93,7 @@ make prepare
 
 ### 動作確認
 
-http://127.0.0.1:8000 にアクセスできるか確認
+http://localhost:8000 にアクセスできるか確認
 アクセスできたら成功
 
 ### コンテナの停止

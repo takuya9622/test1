@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Http\Requests\Auth;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class AdminRequest extends FormRequest
+class LoginRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -21,19 +21,17 @@ class AdminRequest extends FormRequest
      * @return array
      */
     public function rules(){
-        /*return [
-            'name' => ['required'],
+        return [
             'email' => ['required' , 'email'],
             'password' => ['required'],
-        ];*/
+        ];
     }
 
     public function messages(){
-        /*return [
-            'name.required' => 'お名前を入力してください',
+        return [
             'email.required' => 'メールアドレスを入力してください',
             'email.email' => 'メールアドレスは「ユーザー名@ドメイン」形式で入力してください',
             'password.required' => 'パスワードを入力してください',
-        ];*/
+        ];
     }
 }

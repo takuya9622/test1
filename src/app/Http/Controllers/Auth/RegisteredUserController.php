@@ -6,6 +6,7 @@ use App\Actions\Fortify\CreateNewUser;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Redirect;
+use App\Http\Requests\Auth\RegisterUserRequest;
 
 class RegisteredUserController extends Controller
 {
@@ -16,7 +17,7 @@ class RegisteredUserController extends Controller
         $this->createNewUser = $createNewUser;
     }
 
-    public function store(Request $request)
+    public function store(RegisterUserRequest $request)
     {
         // ユーザーを登録（自動ログインはしない）
         $this->createNewUser->create($request->all());

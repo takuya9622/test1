@@ -1,8 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN" ,Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: Georgia, "Hiragino Mincho Pro", "IPA明朝", sans-serif;
 }
 
 .header {
@@ -12,22 +11,20 @@
 
 .header__inner {
     padding: 20px 15px;
-    width: 100%;
+    border-bottom: 1px solid #e0dfde;
 }
 
 .header-utilities {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.header-left {
-    flex: 1;
-    /* 左端の空白スペース */
+    position: relative;
 }
 
 .header__logo {
-    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     color: #726659;
     text-decoration: none;
     font-weight: bold;
@@ -35,10 +32,9 @@
 }
 
 .header-right {
-    flex: 1;
     display: flex;
     justify-content: flex-end;
-    /* 右端にボタンを配置 */
+    margin-left: auto;
 }
 
 .header-nav__link {
@@ -51,4 +47,30 @@
 
 .header-nav__form {
     display: inline;
+}
+
+.header-nav__link,
+.header-nav__form button {
+    color: #726659;
+    text-decoration: none;
+    background: none;
+    border: 1px solid #726659;
+    /* 線の色を指定 */
+    border-radius: 2px;
+    /* 角を少し丸める */
+    padding: 5px 10px;
+    /* ボタンに余白を追加 */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: -10px;
+}
+
+.header-nav__link:hover,
+.header-nav__form button:hover {
+    background-color: #726659;
+    color: #fff;
+}
+
+main {
+    min-height: 100vh;
 }

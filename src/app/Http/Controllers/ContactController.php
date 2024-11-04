@@ -29,6 +29,11 @@ class ContactController extends Controller
         return view('confirm' , compact('contact'));
     }
 
+    public function thanks(){
+        return view('thanks');
+    }
+
+
     public function store(Request $request){
         $genderMapping = [
         '男性' => 1,
@@ -49,6 +54,6 @@ class ContactController extends Controller
         Contact::create($contact);
 
         $request->session()->forget('contact');
-        return view('thanks');
+        return redirect('thanks');
     }
 }
