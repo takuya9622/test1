@@ -87,7 +87,7 @@ http://localhost:81 にアクセスできるか確認
 アクセスできたらnginxはOK
 <br />
 http://localhost:8082 にアクセスできるか確認
-アクセス出来たらMySqlはOK
+アクセス出来たらphpMyAdminはOK
 
 ### コンテナの停止
 
