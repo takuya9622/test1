@@ -37,6 +37,16 @@
     margin-top: 5px;
 }
 
+.form__group-content .form__input--textarea textarea {
+    font-family: "Hiragino Mincho Pro";
+}
+
+.form .form__group-title .form__error {
+    margin-top: 5px;
+    color: #ff0000;
+    font-size: 14px;
+}
+
 .form__input--text input,
 .form__input--text-field input,
 .form__input--tel input {
@@ -79,31 +89,22 @@
     content: '';
     display: inline-block;
     width: 20px;
-    /* カスタムラジオボタンのサイズ */
     height: 20px;
-    /* カスタムラジオボタンのサイズ */
     border: 2px solid #6b5b54;
-    /* 枠線の色 */
     border-radius: 50%;
-    /* 円形にする */
     background-color: #fff;
-    /* 背景色 */
     transition: background-color 0.3s, border-color 0.3s;
 }
 
 .form__input--radio input[type="radio"]:checked+label::before {
     background-color: #6b5b54;
-    /* 選択された時の背景色 */
     border-color: #6b5b54;
-    /* 選択された時の枠線の色 */
     content: '\2713';
-    /* チェックマークを追加（オプション） */
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 14px;
-    /* チェックマークのサイズ */
 }
 
 .form__input--tel {
@@ -119,7 +120,6 @@
 
 .form__input--tel input:focus::placeholder {
     color: transparent;
-    /* フォーカス時にプレースホルダーを非表示に */
 }
 
 .form__input--tel span {
@@ -146,12 +146,6 @@
     resize: vertical;
 }
 
-.form .form__group-title .form__error {
-    margin-top: 5px;
-    color: #ff0000;
-    font-size: 14px;
-}
-
 .form__button {
     margin-top: 30px;
     text-align: center;
@@ -170,24 +164,4 @@
 
 .form__button-submit:hover {
     opacity: 0.8;
-}
-
-@media screen and (max-width: 768px) {
-    .form {
-        width: 100%;
-    }
-
-    .form__input--text-field {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .form__input--text-field input {
-        width: 100%;
-    }
-
-    .form__input--radio {
-        flex-direction: column;
-        gap: 10px;
-    }
 }

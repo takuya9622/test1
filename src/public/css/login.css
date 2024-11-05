@@ -1,5 +1,8 @@
 body {
     background-color: #f1ece7;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* フォントを指定することで統一感を持たせる */
 }
 
 .error {
@@ -13,8 +16,11 @@ body {
     margin-top: 40px;
 }
 
-.logo-container h1 {
+.logo-container h1,
+.login-container h1 {
     font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
 }
 
 .login-container {
@@ -22,15 +28,9 @@ body {
     margin: 40px auto;
     padding: 45px 60px;
     background-color: #fff;
-    border-radius: 8px;
     border: 1px solid #e0dfde;
+    border-radius: 8px;
     text-align: center;
-}
-
-.login-container h1 {
-    font-size: 24px;
-    font-weight: normal;
-    margin-bottom: 20px;
 }
 
 .form-group {

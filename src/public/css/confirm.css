@@ -1,4 +1,4 @@
-.container {
+.confirm-container {
     text-align: center;
     padding: 20px;
 }
@@ -39,10 +39,6 @@ h1 {
     border-bottom: 1px solid #6b5b54;
 }
 
-.buttons {
-    margin-top: 20px;
-}
-
 .send-button,
 .edit-button {
     padding: 10px 20px;
@@ -64,6 +60,5 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 10px;
-    /* ボタン間の間隔を調整 */
     margin-top: 20px;
 }

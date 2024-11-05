@@ -8,7 +8,7 @@
 
 
 
-<div class="container">
+<div class="confirm-container">
     <div>
         <h1>Confirm</h1>
     </div>

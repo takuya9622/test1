@@ -5,21 +5,6 @@
 @endsection
 
 @section('content')
-
-
-<!--バリデーション確認用
-@if ($errors->any())
-    <ul>
-        @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-        @endforeach
-    </ul>
-@endif
--->
-
-
-
-
 <div class="contact-form__content">
     <div class="contact-form__heading">
         <h2>Contact</h2>

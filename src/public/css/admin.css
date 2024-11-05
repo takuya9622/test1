@@ -1,5 +1,5 @@
-.modal,
-.modal-overlay {
+/*モーダルウィンドウ*/
+.modal {
     display: none;
     position: fixed;
 }
@@ -19,17 +19,7 @@
     color: #333;
 }
 
-.modal-overlay {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9;
-}
-
-.modal:target,
-.modal-overlay:target {
+.modal:target {
     display: block;
 }
 
@@ -88,7 +78,6 @@
 
 .modal a.modal-close:hover::before {
     color: #fff;
-    /* ホバー時のマークの色 */
 }
 
 .modal form {
@@ -114,8 +103,7 @@
     background-color: #ee5420;
 }
 
-/*ここまでモーダルウィンドウ*/
-/*ここからadmin機能*/
+/*メイン*/
 
 .admin__content {
     margin: 0 auto;
@@ -230,6 +218,41 @@
     color: #fff;
 }
 
+.pagination {
+    display: flex;
+    gap: 5px;
+}
+
+.pagination a,
+.pagination span {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #6b5b54;
+    background: #fff;
+    color: #6b5b54;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+    background: #6b5b54;
+    color: #fff;
+}
+
+.pagination .active {
+    background: #6b5b54;
+    color: #fff;
+    border-color: #6b5b54;
+    cursor: default;
+}
+
+.pagination li.active span {
+    background: #6b5b54;
+    color: #fff;
+    border-color: #6b5b54;
+    cursor: default;
+}
+
 .admin-table__inner {
     width: 100%;
     border-collapse: collapse;
@@ -265,39 +288,4 @@
 .admin-table__button:hover {
     background: #6b5b54;
     color: #fff;
-}
-
-.pagination {
-    display: flex;
-    gap: 5px;
-}
-
-.pagination a,
-.pagination span {
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid #6b5b54;
-    background: #fff;
-    color: #6b5b54;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.pagination a:hover {
-    background: #6b5b54;
-    color: #fff;
-}
-
-.pagination .active {
-    background: #6b5b54;
-    color: #fff;
-    border-color: #6b5b54;
-    cursor: default;
-}
-
-.pagination li.active span {
-    background: #6b5b54;
-    color: #fff;
-    border-color: #6b5b54;
-    cursor: default;
 }
